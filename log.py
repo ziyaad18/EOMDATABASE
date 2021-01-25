@@ -29,14 +29,14 @@ def verify():
 
 
 def logged():
-    messagebox.showinfo("You have successfully logged")
+    messagebox.showinfo("result", "You have successfully logged")
     import Menuform
     root.destroy()
 
 #if login details are incorrect
 
 def failed():
-    messagebox.showinfo("Error, try again")
+    messagebox.showerror("Result", "Error try again")
     Username.delete(0, END)
     Password.delete(0, END)
 
